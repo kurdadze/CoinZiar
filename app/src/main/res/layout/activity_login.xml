@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.SigninActivity">
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/ic_bg"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linerlayout1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:id="@+id/applogo"
+            android:src="@drawable/ziarilogo" />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your email"
+            android:background="@drawable/edit_box_style_login"
+            android:textColorHint="@color/dialog_date_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kurdadze@gmail.com"
+            android:textColor="@color/black"
+            android:id="@+id/edtEmail"/>
+
+        <EditText
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="Enter your password"
+            android:textColorHint="@color/dialog_date_text"
+            android:background="@drawable/edit_box_style_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textColor="@color/black"
+            android:id="@+id/edtPassword"/>
+
+        <Button
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:textColor="@color/white"
+            android:id="@+id/btSignin"
+            android:text="Log In"/>
+
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSignup"
+            android:textColor="@color/black"
+            android:text="Not have an account? Sign up here"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:text="Eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/lngEng"
+                android:tag="1"
+                android:gravity="center"/>
+            <TextView
+                android:text=" | "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/separator"
+                android:tag="0"
+                android:gravity="center"/>
+            <TextView
+                android:text="ქარ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/lngKa"
+                android:tag="2"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Coin Ziari</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="UNKNOWN_MESSAGE"></string>
+    <string name="PASSWORDS_DO_NOT_MATCH">Passwords do not match</string>
+    <string name="DATA_IS_CHANGED">Data is changed</string>
+    <string name="USER_REGISTRATION_SUCCESS">User registration success</string>
+    <string name="USER_AUTHORISED">User authorised</string>
+    <string name="PLEACE_FILL_DATAS"> Pleace fill datas</string>
+    <string name="USER_ALREADY_REGISTERED">User already registered</string>
+    <string name="ROWS_IS_ZERO">Rows is zero</string>
+    <string name="USER_NOT_FOUND">User not found</string>
+    <string name="URL_PARAMS_ERROR">URL Params error</string>
+    <string name="profilePictureChanged">Your profile picture is changed</string>
+    <string name="newPasswordFieldIsNull">New password is null. pleace fill</string>
+</resources>

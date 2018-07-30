@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.ProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:id="@+id/backbar">
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/selectMarket"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="Profile"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_accept1"
+                    android:layout_marginEnd="0dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backbar"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            app:civ_border_color="@color/gray"
+            app:civ_border_width="0.5dp"
+            android:src="@drawable/defaultavatar"/>
+
+        <TextView
+            android:id="@+id/changeProfilePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_photo"
+            android:layout_centerHorizontal="true"
+            android:text="Change Photo"
+            android:textColor="@color/link_blue"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp" />
+
+        <!-- email section -->
+        <RelativeLayout
+            android:id="@+id/relLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/changeProfilePhoto"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_mail"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/grey_border_bottom"
+                android:hint="User Name"
+                android:enabled="false"
+                android:inputType="textNoSuggestions"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+
+        <!-- current password -->
+        <RelativeLayout
+            android:id="@+id/relLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relLayout5"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_password"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/currPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/grey_border_bottom"
+                android:hint="Current password"
+                android:text=""
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+
+        <!-- new password-->
+        <RelativeLayout
+            android:id="@+id/relLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relLayout6"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/newPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/grey_border_bottom"
+                android:layout_marginStart="40dp"
+                android:hint="New password"
+                android:text=""
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+
+        <!-- new password-->
+        <RelativeLayout
+            android:id="@+id/relLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relLayout7"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/reNewPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/grey_border_bottom"
+                android:hint="Renew password"
+                android:text=""
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
